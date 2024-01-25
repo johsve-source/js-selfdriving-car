@@ -10,7 +10,7 @@ class Controls {
 
     #addKeyboardListeners() {
         document.onkeydown = (event) => {
-            switch(event.key) {
+            switch (event.key) {
                 case "ArrowLeft":
                     this.left = true;
                     break;
@@ -19,18 +19,19 @@ class Controls {
                     this.right = true;
                     break;
 
-                case "ArrowForward":
+                case "ArrowUp":
                     this.forward = true;
                     break;
 
-                case "ArrowReverse":
+                case "ArrowDown":
                     this.reverse = true;
                     break;
             }
             console.table(this);
-        }
+        };
+
         document.onkeyup = (event) => {
-            switch(event.key) {
+            switch (event.key) {
                 case "ArrowLeft":
                     this.left = false;
                     break;
@@ -39,15 +40,15 @@ class Controls {
                     this.right = false;
                     break;
 
-                case "ArrowForward":
+                case "ArrowUp":
                     this.forward = false;
                     break;
 
-                case "ArrowReverse":
+                case "ArrowDown":
                     this.reverse = false;
                     break;
             }
             console.table(this);
-        }
+        };
     }
 }
